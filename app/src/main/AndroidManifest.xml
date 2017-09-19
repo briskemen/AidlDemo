@@ -16,7 +16,11 @@
             </intent-filter>
         </activity>
 
-        <service android:name=".IMyAidlService"/>
+        <service android:name=".IMyAidlService"
+            android:exported="true"
+            android:enabled="true"/>
+
+        <service android:name=".service.InitializeService"/>
     </application>
 
 </manifest>
